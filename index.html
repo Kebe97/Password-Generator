@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <input type="checkbox" id="special" onchange="generator(symbols, checkboxsp)">
+        <label for="special">Special (+!#)</label>
+        
+        <input type="checkbox" id="number" onchange="generator(numbers, checkboxnum)">
+        <label for="numbers">Numbers (123)</label>
+        
+
+        <br><br>
+        
+        
+        <input type="checkbox" id="upperCase" onchange="generator(upperCaseAlphabet, checkboxspupp)" >
+        <label for="upperCase">Uppercase (ABC)</label>
+        
+        <input type="checkbox" id="lowerCase" onchange="generator(lowerCaseAlphabet, checkboxlow)">
+        <label for="lowerCase">Lowercase (abc)</label>
+        
+
+        <br><br>
+
+        <label for="lenght">Lenght</label>
+        <input type="text" id="lenght">
+
+        <br><br>
+        <button id="button" onclick="go()">Generate my password!</button>
+        <h1 id="newpass"></h1>
+        <script src="code.js"></script>
+    </body>
+</html>
